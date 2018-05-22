@@ -1,0 +1,36 @@
+Interface documents{  //creating an interface class
+    void checkDoc();
+    void checkPpt();
+}
+abstract class paper implements documents{   //creating an abstract class
+    public void checkDoc(text){  //checks if the file extension is for a .doc file
+	pattern = (/\w\.[doc|docx]/);
+                  if(text == pattern){
+	print("You printed a doc file");
+	}
+}
+    public void checkPpt(text){  //checks if the file extension is for a .ppt file
+	pattern = (/\w\.[ppt|pptx]/);
+if(text == pattern){
+print("You printed a ppt file");
+}
+}
+//creating abstract methods 
+abstract void printColored();
+abstract void printBlackAndWhite();
+}
+class checkColour extends paper{ //creating a class which defines the abstract methods
+	public void printColored(checkPpt){   //this method has the checkPpt method as  an  argument
+	this.checkPpt;
+	prints("You've requested for a colored document");
+	}
+	public void printBlackAndWhite(checkDoc){
+	this.checkDoc
+	prints("you've requested for a black and white document");
+	}
+}
+public static void main (string[] args){
+	checkPpt ppt = new checkPpt("thanks.ppt");//creates an object for the checkPpt method
+	checkDoc doc = new checkDoc("testing.docx");
+}
+
